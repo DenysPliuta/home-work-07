@@ -22,45 +22,43 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="container">
-				<div class="nav-container">
-					<nav class="nav-header">
-						<a href="/" class="logo-header">
-							<span class="logo-accent">Web</span>
-							Studio
-						</a>
-						<ul class="site-nav list">
-							<li class="nav-link">
-								<a href="" class="link nav current">Студія</a>
-							</li>
-							<li class="nav-link">
-								<a href="./portfolio.html" class="link nav">Портфоліо</a>
-							</li>
-							<li class="nav-link">
-								<a href="" class="link nav">Контакти</a>
-							</li>
-						</ul>
-					</nav>
-					<ul class="header-contact list">
-						<li class="nav-link">
-							<a href="mailto:info@devstudio.com" class="link contact-header">
-								<svg class="header-mail" width="16" height="12">
-									<use href="./images/icons.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
+		<header class="header">
+			<div class="header__container container">
+				<!-- prettier-ignore -->
+				<a href="/" class="logo link">
+					<span class="logo-accent">Web</span>Studio
+				</a>
+				<nav class="nav header__nav">
+					<ul class="nav__list list">
+						<li class="nav__item">
+							<a href="" class="nav__link nav__link--current link">Студія</a>
 						</li>
-						<li class="nav-link">
-							<a href="tel:+380961111111" class="link contact-header">
-								<svg class="header-phone" width="10px" height="16px">
-									<use href="./images/icons.svg#icon-smartphone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
+						<li class="nav__item">
+							<a href="./portfolio.html" class="nav__link link">Портфоліо</a>
+						</li>
+						<li class="nav__item">
+							<a href="" class="nav__link link">Контакти</a>
 						</li>
 					</ul>
-				</div>
+				</nav>
+				<ul class="header__contact list">
+					<li>
+						<a href="mailto:info@devstudio.com" class="header__link link">
+							<svg class="header__icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a href="tel:+380961111111" class="header__link link">
+							<svg class="header__icon" width="10px" height="16px">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main>
@@ -68,10 +66,10 @@
 				<div class="container">
 					<ul class="list">
 						<li>
-							<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+							<h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
 						</li>
 						<li>
-							<button type="button" class="hero-btn" data-modal-open>
+							<button type="button" class="hero_btn" data-modal-open>
 								Замовити послугу
 							</button>
 						</li>
@@ -80,11 +78,11 @@
 			</section>
 			<section class="advantage">
 				<h2 class="visually-hidden">Наші Переваги</h2>
-				<div class="adv-container container">
-					<ul class="list advantage">
+				<div class="container">
+					<ul class="advantage_list list">
 						<li>
-							<div class="advantage-icon">
-								<svg class="feature-icon" width="70px" height="70">
+							<div class="advantage_group">
+								<svg class="advantage_feature-icon" width="70px" height="70">
 									<use href="./images/icons.svg#icon-antenna"></use>
 								</svg>
 							</div>
@@ -95,8 +93,8 @@
 							</p>
 						</li>
 						<li>
-							<div class="advantage-icon">
-								<svg class="feature-icon" width="70px" height="70">
+							<div class="advantage-group">
+								<svg class="advantage_feature-icon" width="70px" height="70">
 									<use href="./images/icons.svg#icon-clock"></use>
 								</svg>
 							</div>
@@ -107,8 +105,8 @@
 							</p>
 						</li>
 						<li>
-							<div class="advantage-icon">
-								<svg class="feature-icon" width="70px" height="70">
+							<div class="advantage-group">
+								<svg class="advantage_feature-icon" width="70px" height="70">
 									<use href="./images/icons.svg#icon-diagram"></use>
 								</svg>
 							</div>
@@ -118,8 +116,8 @@
 							</p>
 						</li>
 						<li>
-							<div class="advantage-icon">
-								<svg class="feature-icon" width="70px" height="70">
+							<div class="advantage-group">
+								<svg class="advantage_feature-icon" width="70px" height="70">
 									<use href="./images/icons.svg#icon-astronaut"></use>
 								</svg>
 							</div>
@@ -516,9 +514,9 @@
 				<div class="container footer-group">
 					<div class="footer-contacts">
 						<h2 class="visually-hidden">Контакти</h2>
+						<!-- prettier-ignore -->
 						<a href="/" class="logo-footer link">
-							<span class="logo-accent">Web</span>
-							Studio
+							<span class="logo-accent">Web</span>Studio
 						</a>
 						<address>
 							<ul class="list">
