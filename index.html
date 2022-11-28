@@ -546,77 +546,77 @@
 							</ul>
 						</address>
 					</div>
-					<div class="social__footer">
-						<h2 class="footer__title">Приєднуйтесь</h2>
-						<ul class="footer__social-list list">
-							<li class="item-footer">
+					<div class="social-footer">
+						<h2 class="social-footer__title">Приєднуйтесь</h2>
+						<ul class="social-footer__list list">
+							<li>
 								<a
-									class="link-footer link"
+									class="social-footer__link link"
 									href="https://www.instagram.com"
 									aria-label="instagram"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 								>
-									<svg class="icons-footer" width="20" height="20">
+									<svg class="social-footer__icons" width="20" height="20">
 										<use href="./images/icons.svg#icon-instagram"></use>
 									</svg>
 								</a>
 							</li>
-							<li class="item-footer">
+							<li>
 								<a
-									class="link-footer link"
+									class="social-footer__link link"
 									href="https://twitter.com"
 									aria-label="twitter"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 								>
-									<svg class="icons-footer" width="20" height="20">
+									<svg class="social-footer__icons" width="20" height="20">
 										<use href="./images/icons.svg#icon-twitter"></use>
 									</svg>
 								</a>
 							</li>
-							<li class="item-footer">
+							<li>
 								<a
-									class="link-footer link"
+									class="social-footer__link link"
 									href="https://www.facebook.com"
 									aria-label="facebook"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 								>
-									<svg class="icons-footer" width="20" height="20">
+									<svg class="social-footer__icons" width="20" height="20">
 										<use href="./images/icons.svg#icon-facebook"></use>
 									</svg>
 								</a>
 							</li>
-							<li class="item-footer">
+							<li>
 								<a
-									class="link-footer link"
+									class="social-footer__link link"
 									href="https://www.linkedin.com"
 									aria-label="linkedin"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 								>
-									<svg class="icons-footer" width="20" height="20">
+									<svg class="social-footer__icons" width="20" height="20">
 										<use href="./images/icons.svg#icon-linkedin"></use>
 									</svg>
 								</a>
 							</li>
 						</ul>
 					</div>
-					<form class="subscribe-form">
+					<form class="subscribe">
 						<label for="subscribe">
-							<strong class="subscribe-title">Підпишіться на розсилку</strong>
+							<strong class="subscribe__title">Підпишіться на розсилку</strong>
 							<input
 								type="text"
 								name="subscribe"
 								id="subscribe"
 								placeholder="E-mail"
-								class="subscribe-input"
+								class="subscribe__input"
 							/>
 							<div class="btn-group">
-								<button type="submit" class="subscribe-btn">
+								<button type="submit" class="subscribe__btn">
 									Підписатися
-									<svg class="icon-send" width="24" height="24">
+									<svg class="subscribe__icon-send" width="24" height="24">
 										<use href="./images/icons.svg#icon-send"></use>
 									</svg>
 								</button>
@@ -628,52 +628,59 @@
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button class="btn-close" data-modal-close>
-					<svg class="icon-close" width="18px" height="18px">
+				<button class="modal__btn-close" data-modal-close>
+					<svg class="modal__icon-close" width="18px" height="18px">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
 				</button>
 				<form class="order-form">
-					<strong class="modal-title">
+					<strong class="modal__title">
 						Залиште свої дані, ми вам передзвонимо
 					</strong>
-					<div role="group" class="form-group">
-						<label for="user-name" class="label-form">Ім'я</label>
-						<div class="input-field">
-							<input type="text" id="user-name" class="form-input" required />
-							<svg class="icon-form" width="18" height="18">
+					<div role="group" class="modal__form-group">
+						<label for="user-name" class="modal__label-form">Ім'я</label>
+						<div class="modal__input-field">
+							<input
+								type="text"
+								id="user-name"
+								class="modal__form-input"
+								required
+							/>
+							<svg class="modal__icon-form" width="18" height="18">
 								<use href="./images/icons.svg#icon-user"></use>
 							</svg>
 						</div>
-						<label for="user-tel" class="label-form">Телефон</label>
-						<div class="input-field">
-							<input type="tel" id="user-tel" class="form-input" />
-							<svg class="icon-form" width="18" height="18">
+						<label for="user-tel" class="modal__label-form">Телефон</label>
+						<div class="modal__input-field">
+							<input type="tel" id="user-tel" class="modal__form-input" />
+							<svg class="modal__icon-form" width="18" height="18">
 								<use href="./images/icons.svg#icon-tel"></use>
 							</svg>
 						</div>
-						<label for="user-mail" class="label-form">Пошта</label>
-						<div class="input-field">
-							<input type="mail" id="user-mail" class="form-input" />
-							<svg class="icon-form" width="18" height="18">
+						<label for="user-mail" class="modal__label-form">Пошта</label>
+						<div class="modal__input-field">
+							<input type="mail" id="user-mail" class="modal__form-input" />
+							<svg class="modal__icon-form" width="18" height="18">
 								<use href="./images/icons.svg#icon-mail"></use>
 							</svg>
 						</div>
-						<label for="order-form-text" class="label-form">Коментар</label>
+						<label for="order-form-text" class="modal__label-form">
+							Коментар
+						</label>
 						<textarea
 							name="form-text"
 							id="order-form-text"
-							class="order-form-text"
+							class="modal__order-form-text"
 							placeholder="Введіть текст"
 						></textarea>
 						<div class="checkbox-group" role="group">
-							<label for="form-checkbox" class="label-checkbox">
+							<label for="form-checkbox" class="modal__label-checkbox">
 								<input
 									type="checkbox"
 									id="form-checkbox"
-									class="form-checkbox visually-hidden"
+									class="modal__form-checkbox visually-hidden"
 								/>
-								<svg class="checkbox-icon" width="16" height="15">
+								<svg class="modal__checkbox-icon" width="16" height="15">
 									<use
 										class="uncheck"
 										href="./images/icons.svg#icon-check-border"
@@ -682,12 +689,12 @@
 								</svg>
 
 								Погоджуюся з розсилкою та приймаю
-								<a href="/index.html" class="checkbox-link link">
+								<a href="/index.html" class="modal__checkbox-link link">
 									Умови договору
 								</a>
 							</label>
 						</div>
-						<button type="submit" class="form-btn">Відправити</button>
+						<button type="submit" class="modal__form-btn">Відправити</button>
 					</div>
 				</form>
 			</div>
